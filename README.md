@@ -1,9 +1,6 @@
 
 # VR Assignment1
 
-A brief description of what this project does and who it's for
-
-
 
 ## Requirements
 ``` bash
