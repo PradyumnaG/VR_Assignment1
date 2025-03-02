@@ -7,7 +7,6 @@ OUTPUT_DIR = "./output_images"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 def detect_and_match_features(image1, image2):
-    """Detect keypoints and match features using SIFT and BFMatcher."""
     sift = cv2.SIFT_create()
     
     # Detect keypoints and descriptors
@@ -26,7 +25,7 @@ def detect_and_match_features(image1, image2):
     return keypoints1, keypoints2, matches
 
 def draw_matches(image1, keypoints1, image2, keypoints2, matches):
-    """Draw matches between two images and return the resulting image."""
+
     # Draw matches
     matched_image = cv2.drawMatches(
         image1, keypoints1, 
@@ -38,7 +37,7 @@ def draw_matches(image1, keypoints1, image2, keypoints2, matches):
     return matched_image
 
 def create_panorama(image1, image2):
-    """Stitch two images together using homography."""
+
     keypoints1, keypoints2, matches = detect_and_match_features(image1, image2)
     
     # Extract location of good matches
