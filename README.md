@@ -21,7 +21,7 @@ Install dependencies
 pip install opencv-python numpy
 ```
 
-# Part1
+## Part1
 Navigate to the directory
 
 ```bash
@@ -37,7 +37,7 @@ Number of coins are printed on the terminal.
 
 Navigate to the output folder to view the extracted and segmented outputs of the coins.
 
-# Part2
+## Part2
 Navigate to the directory:
 ```bash
   cd VR_Assignment1/Part2
